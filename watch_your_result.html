@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1>Result on the basis of your scores</h1>
+  <h2>please see the result carefully </h2>
+</div>
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b></b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
+      <p style="font-size:36px"><span style="font-size:36px">IF your score is 0%. </span>Then you have not any mental health issue. </p>
+
+    </div>
+    <div class="column-33">
+        <img src="m.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="mimage.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>If Your Score Is 1% to 25%</b></h1>
+      <h1 class="large-font" style="color:red;"><b></b></h1>
+      <p style="font-size:24px"><span style="font-size:24px">YOU HAVE A LOW DEPRESSION SIGN.</span> you need some medical tratement.</p>
+      <button class="button" style="background-color:red">Read More</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>If Your Score Is 26% to 50% </b>You have a moderate depression SIGN</h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>You need to talk to doctor.</b></h1>
+      <p><span style="font-size:36px">Dont worry </span> </p>
+
+    </div>
+    <div class="column-33">
+        <img src="i.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>If Your Score Is 51% to 100% </b> YOU HAVE A HIGH  DEPRESSION SIGN</h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>You need to talk to doctor immediately.</b></h1>
+      <p><span style="font-size:36px">YOU ARE FACING  A BIG PROBLEM</span> </p>
+
+    </div>
+    <div class="column-33">
+        <img src="man.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
